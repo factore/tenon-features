@@ -1,6 +1,6 @@
 {
   "name": "tenon-features",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Various standalone features used to drive Tenon",
   "main": "./lib/index.js",
   "scripts": {
@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/factore/tenon-features#readme",
   "peerDependencies": {
-    "react": ">=15.0.0",
-    "tenon-components": ">=2.1.0"
+    "react": ">=15.3.0",
+    "react-dom": "^15.0.1",
+    "tenon-components": ">=2.1.1"
   },
   "dependencies": {
     "babel-polyfill": "^6.7.4",
@@ -31,14 +32,6 @@
     "isomorphic-fetch": "^2.2.0",
     "lodash": "^4.16.6",
     "pluralize": "^1.2.1",
-    "react": "^15.3.2",
-    "react-addons-css-transition-group": "^15.0.1",
-    "react-dom": "^15.0.1",
-    "react-dragula": "^1.1.15",
-    "react-portal": "^2.1.0",
-    "react-redux": "^4.4.5",
-    "redux": "^3.4.0",
-    "redux-thunk": "^2.0.1",
     "urijs": "^1.17.1"
   },
   "devDependencies": {
