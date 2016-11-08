@@ -33,6 +33,7 @@ import TenonContentAssetAttachment from './modal-handlers/tenon-content-asset-at
 import TenonContentAssetLink from './modal-handlers/tenon-content-asset-link';
 import TenonContentImageAssetLink from './modal-handlers/tenon-content-image-asset-link';
 import TenonContentLibrary from './modal-handlers/tenon-content-library';
+import TenonContentEmbeddedContent from './modal-handlers/tenon-content-embedded-content';
 
 const modalHandlers = {
   AssetAttachment,
