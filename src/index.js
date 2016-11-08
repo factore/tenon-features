@@ -40,7 +40,7 @@ const modalHandlers = {
   NewItemVersion,
   TenonContentAssetAttachment,
   TenonContentAssetLink,
-  TenonContentImageAsset,
+  TenonContentImageAssetLink,
   TenonContentLibrary
 };
 

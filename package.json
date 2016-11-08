@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/factore/tenon-features#readme",
   "peerDependencies": {
-    "react": ">=15.0.0"
+    "react": ">=15.0.0",
+    "tenon-components": ">=2.1.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.7.4",
@@ -38,7 +39,6 @@
     "react-redux": "^4.4.5",
     "redux": "^3.4.0",
     "redux-thunk": "^2.0.1",
-    "tenon-components": "^2.1.0",
     "urijs": "^1.17.1"
   },
   "devDependencies": {

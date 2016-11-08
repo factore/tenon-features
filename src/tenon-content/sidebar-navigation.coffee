@@ -1,4 +1,4 @@
-class Tenon.features.SidebarNavigation
+class SidebarNavigation
   constructor: ->
     @$navigation = $('.sidebar-container')
     @$toggle = $('#sidebar-toggle')
@@ -24,3 +24,5 @@ class Tenon.features.SidebarNavigation
     @$toggle.find('i').toggleClass('fa-caret-square-o-down fa-times')
     @$toggle.addClass(@openClass)
     @$navigation.addClass(@openClass)
+
+module.exports = SidebarNavigation

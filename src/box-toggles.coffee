@@ -1,4 +1,4 @@
-class Tenon.features.BoxToggles
+class BoxToggles
   constructor: ->
     $.each($('.box .header'), @_addToggleButtons)
     $('.box .header').on('click', '.toggle-box', @_toggle)
@@ -15,3 +15,5 @@ class Tenon.features.BoxToggles
   _toggle: (e) ->
     $link = $(e.currentTarget)
     $link.closest('.box').toggleClass('closed')
+
+module.exports = BoxToggles

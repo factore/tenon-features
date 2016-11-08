@@ -1,4 +1,4 @@
-class Tenon.features.tenonContent.EmbeddedContentModalHandler
+class EmbeddedContentModalHandler
   constructor: (@$link, @$el, @$template) ->
     @hiddenField = @$link.parent().next('.embed-code-field')
     @textArea = @$el.find('#embed_code')
@@ -10,3 +10,5 @@ class Tenon.features.tenonContent.EmbeddedContentModalHandler
     @hiddenField.val(@textArea.val())
     @$link.siblings('.embed').html(@textArea.val())
     @$template.modal('hide')
+
+module.exports = EmbeddedContentModalHandler

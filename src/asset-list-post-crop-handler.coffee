@@ -1,4 +1,4 @@
-class Tenon.features.AssetListPostCropHandler
+class AssetListPostCropHandler
   constructor: (@$link, @asset) ->
     $('.asset-cropping').remove()
     @$list = $('#assets')
@@ -13,3 +13,5 @@ class Tenon.features.AssetListPostCropHandler
 
   _template: =>
     $(JST['tenon/templates/assets/asset_row'](asset: @asset))
+
+module.exports = AssetListPostCropHandler

@@ -1,10 +1,12 @@
-class Tenon.features.tenonContent.PostCropHandler
+ModalWindows = require('../modal-windows')
+
+class PostCropHandler
   constructor: (@$link, @asset) ->
     $image = @$link.closest('.image-controls').data('image')
     @$piece = $image.closest('.tn-tc-piece')
     @_replaceImage()
     @_updateFields()
-    Tenon.features.ModalWindows.closeModals()
+    ModalWindows.closeModals()
 
   _replaceImage: =>
     $img = @$piece.find('img')
@@ -22,3 +24,5 @@ class Tenon.features.tenonContent.PostCropHandler
   _updateFields: =>
     @$piece.find('[data-asset-id-field]').val(@asset.id)
     @$link.data('asset-id', @asset.id)
+
+module.exports = PostCropHandler
